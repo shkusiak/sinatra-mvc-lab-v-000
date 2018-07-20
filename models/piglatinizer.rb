@@ -16,7 +16,7 @@ class PigLatinizer
 
       word.slice!(0..2)
       word << "ay"
-    elsif word[0].downcase.match(/[bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz]/)
+    elsif word[0].downcase.match(/[bcdfghjklmnpqrstvwxyz]{2}/)
       #word = word.slice(3..-1) # + word.slice(0,3)
       word << word[0]
       word.slice!(0)

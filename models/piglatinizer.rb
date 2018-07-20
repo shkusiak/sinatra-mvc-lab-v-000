@@ -11,7 +11,7 @@ class PigLatinizer
   def piglatinize_word(word)
     if word[0].downcase.match(/[aeoiu]/) #begins w a vowel
       word << "way"
-    elsif word[0..2].downcase.match(/[bcdfghjklmnpqrstvwxyz]/)
+    elsif word[0..2].downcase.match(/[bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz][bcdfghjklmnpqrstvwxyz]/)
       word << word[0..2]
 
       word.slice!(0..2)
